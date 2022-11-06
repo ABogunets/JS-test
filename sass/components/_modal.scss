@@ -1,0 +1,204 @@
+
+// backdrop
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity var(--modal-duration) var(--timing-function);
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.3);
+}
+// modal window
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--modal-duration) var(--timing-function);
+}
+
+.modal__close-button {
+    @extend %flex-center;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    background-color: var(--primary-bkgd-color);
+}
+
+.modal__close-button svg {
+    transition: fill var(--duration) var(--timing-function);
+}
+
+.modal__close-button:hover svg {
+    fill: var(--accent-text-color);
+}
+
+//modal-form
+.modalform {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+.modalform__title {
+    margin: 0;
+    margin-bottom: 12px;
+
+    @include font (20px, 1.15, 0.03em, 700);
+    text-align: center;
+
+    color: var(--secondary-text-color);
+}
+.modalform__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.modalform__label,
+.modalform__input {
+
+    @include font (12px, 1.16, 0.01em, 400);
+    color: var(--primary-text-color);
+}
+
+.modalform__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 12px 12px 42px;
+    outline: none;
+    width: 100%;
+
+    transition: border-color var(--duration) var(--timing-function);
+
+    &:focus, &:hover {
+        border-color: var(--accent-text-color);
+        }
+}
+.modalform__wrap {
+    position: relative;
+    margin-top: 4px;
+}
+.modalform__icon {
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+
+    fill: var(--secondary-text-color);
+    transition: fill var(--duration) var(--timing-function);
+}
+.modalform__input:focus+.modalform__icon {
+    fill: var(--accent-text-color);
+}
+.modalform__input:hover+.modalform__icon {
+    fill: var(--accent-text-color);
+}
+.modalform__input--comment {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 16px;
+    height: 120px;
+    resize: none;
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        }
+}
+
+//form-checkbox
+.checkbox {
+    @extend %flex-center;
+    margin-top: 20px;
+}
+
+.checkbox__label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.checkbox__icon {
+    @extend %flex-center;
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 2px;
+
+    margin-right: 7px;
+}
+
+.checkbox__icon svg {
+    display: none;
+}
+
+.checkbox__input:checked+.checkbox__label .checkbox__icon {
+    border: none;
+    background-color: var(--accent-text-color);
+}
+
+.checkbox__input:checked+.checkbox__label .checkbox__icon svg {
+    display: flex;
+}
+
+.checkbox__link {
+    position: relative;
+    color: var(--accent-text-color);
+    margin-left: 5px;
+    text-decoration: none;
+
+    &::after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 1px;
+        background-color: var(--accent-text-color);
+        }
+}
+
+//form-button
+.modalform__button {
+    display: flex;
+    padding: 10px 52px;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-width: 200px;
+}

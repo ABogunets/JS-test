@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./utils/utils";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./components/common";
+
+//components
+@import "./components/layouts/page-header";
+
+@import "./components/layouts/hero";
+@import "./components/layouts/features";
+@import "./components/layouts/work";
+@import "./components/layouts/team";
+@import "./components/layouts/clients";
+
+@import "./components/layouts/page-footer";
+
+//modal
+@import "./components/modal";
+
+
+//portfoilio-page
+@import "./components/layouts/portfolio-page";

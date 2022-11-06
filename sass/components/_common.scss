@@ -1,0 +1,106 @@
+body {
+    background-color: var(--primary-bkgd-color);
+    color: var(--primary-text-color);
+
+    font-family: $primary-font;
+    @include font (14px, 1.7);
+}
+
+img {
+    display: block;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+//button
+.button {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    background-color: var(--accent-text-color);
+    color: var(--primary-bkgd-color);
+
+    font-family: inherit;
+    @include font (16px, 1.9, 0.06em, 700);
+
+    cursor: pointer;
+    transition: background-color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--btn-hover-accent-color);
+    }
+}
+// section-title
+.section-title {
+    color: var(--secondary-text-color);
+
+    @include font (36px, 1.2, 0.03em, 700);
+    text-align: center;
+}
+// social-media icons
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+.social-media__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+}
+.social-media__link {
+    @extend %flex-center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-decoration: none;
+
+    transition: background-color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
+
+    &:hover svg {
+        fill: var(--primary-bkgd-color);
+    }
+    &:focus svg {
+        fill: var(--primary-bkgd-color);
+    }
+}
+.social-media__link svg {
+    transition: fill var(--duration) var(--timing-function);
+}
+// logo
+.logo {
+    color: var(--accent-text-color);
+
+    font-family: $secondary-font;
+    @include font (26px, 1.2, 0.03em, 700);
+    text-decoration: none;
+}
+.logo__text {
+    color: var(--logo-text-color);
+}

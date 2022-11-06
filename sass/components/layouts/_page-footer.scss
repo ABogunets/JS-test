@@ -1,0 +1,99 @@
+.page-footer {
+    background-color: var(--secondary-bkgd-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+//Logo and contacts
+.logo__text--inverse {
+    color: var(--primary-bkgd-color);
+}
+.footer-contacts {
+    width: 231px;
+}
+.footer-contacts__address {
+    font-style: normal;
+    margin-top: 20px;
+}
+.contacts-set__link {
+    color: var(--contacts-footer-color);
+    font-size: 14px;
+    text-decoration: none;
+
+    transition: color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-bkgd-color);
+        }
+}
+.contacts-set__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+//Slogan and social links
+.slogan {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
+.slogan__title,
+.footer-form__title {
+    margin: 0;
+    color: var(--primary-bkgd-color);
+
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.social-media--footer {
+    margin-top: 20px;
+}
+.social-media__item--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+//Footer-form
+.footer-form {
+    margin-left: auto;
+}
+.email-form {
+    margin-top: 20px;
+}
+.email-form__wrap {
+    display: flex;
+    height: 50px;
+}
+
+.email-form__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    width: 358px;
+    padding: 15px 0px 15px 16px;
+    margin-right: 12px;
+
+    background-color: var(--secondary-bkgd-color);
+    color: rgba(255, 255, 255, 0.6);
+
+    @include font (16px, 1.25, 0.03em, 400);
+
+    transition: border-color var(--duration) var(--timing-function);
+
+    &:focus, &:hover {
+        border-color: var(--primary-bkgd-color);
+        color: var(--primary-bkgd-color);
+        }
+}
+.footer-form__button {
+    @extend %flex-center;
+    padding: 0;
+    width: 200px;
+}
+.footer-form__icon {
+    margin-left: 10px;
+}

@@ -1,0 +1,38 @@
+.team {
+    background-color: var(--team-bkgd-color);
+}
+.team-set {
+    display: flex;
+}
+.team-set__item:not(:last-child) {
+    margin-right: 30px;
+}
+.team-set__item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team__section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.team-set__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+
+    color: var(--secondary-text-color);
+
+    @include font (16px, 1.2, 0.03em, 500);
+}
+.team-set__text {
+    text-align: center;
+    margin: 0;
+
+    color: var(--primary-text-color);
+
+    @include font (16px, 1.2);
+}
+.team-set__meta {
+    padding: 30px 32px;
+}

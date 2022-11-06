@@ -1,0 +1,35 @@
+.work {
+    padding-top: 0;
+}
+.work-set {
+    display: flex;
+}
+.work-set__item:not(:last-child) {
+    margin-right: 30px;
+}
+.work-set__item {
+    position: relative;
+}
+.work__section-title {
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+.work-set--overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+.work-set__title {
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+
+    color: var(--primary-bkgd-color);
+
+    @include font (14px, 1.14, 0.03em, 700);
+    text-transform: uppercase;
+}
