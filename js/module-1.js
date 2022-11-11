@@ -76,3 +76,52 @@
 // console.log(!true);
 
 //Web2
+const stars = 6;
+let price;
+// if (stars === 1) {
+//     price = 20;
+// } else if (stars === 2) {
+//     price = 30;
+// } else if (stars === 3) {
+//     price = 50;
+// } else if (stars === 4) {
+//     price = 70;
+// } else if (stars === 5) {
+//     price = 120;
+// } else {
+//     console.log("Такого кол-ва звезд нет")
+// }
+// console.log("price", price);
+
+// switch(stars) {
+//     case 1: price = 20;
+//         break;
+//     case 2: price = 30;
+//         break;
+//     case 3: price = 50;
+//         break;
+//     case 4: price = 70;
+//         break;
+//     case 5: price = 120;
+//         break;
+//     default:
+//         console.log("Такого кол-ва звезд нет");
+// }
+// console.log("price", price);
+
+// for (let i = 0; i <= 5; i += 1) { 
+// console.log("i", i);
+// }
+
+// const min = 0;
+// const max = 5;
+// let total = 0;
+// for (let i = min; i <= max; i += 1) { 
+//     if (i % 2 !== 0) {
+//         console.log('Odd number: ', i);
+//         continue;
+//      }
+//     console.log('Even number: ', i);
+//     total += 1;
+// }
+//     console.log('total: ', total);
