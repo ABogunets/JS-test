@@ -216,3 +216,210 @@
 // checkStorage(20,0);
 
 //Task-21
+// function isNumberInRange(start, end, number) {
+//   const isInRange = number>=start && number<=end; // Change this line
+//   console.log("isNumberInRange ~ isInRange", isInRange);
+
+//   return isInRange;
+// }
+// isNumberInRange(1, 10, 11);
+
+//Task-22
+// function checkIfCanAccessContent(subType) {
+//   const canAccessContent = subType === 'pro' || subType === 'vip'; // Change this line
+//   console.log("canAccessContent", canAccessContent);
+
+//   return canAccessContent;
+// }
+// checkIfCanAccessContent('vip');
+
+//Task-23
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   const isNotInRange = !isInRange; // Change this line
+//   console.log("isNotInRange", isNotInRange);
+
+//   return isNotInRange;
+// }
+// isNumberNotInRange(1, 10, 11);
+
+//Task-24
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount;
+//   // Change code below this line
+//   if (totalSpent >= 50000) {
+//     discount = GOLD_DISCOUNT;
+//   } else
+//   if (totalSpent >= 20000 && totalSpent < 50000) {
+//     discount = SILVER_DISCOUNT;
+//   } else
+//   if (totalSpent >= 5000 && totalSpent < 20000) {
+//     discount = BRONZE_DISCOUNT;
+//   }
+//     else { discount = 0 };
+//   console.log("discount", discount);
+
+//   // Change code above this line
+//   return discount;
+// }
+// getDiscount(60000);
+
+//Task-25
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+
+//   // if (ordered > available) {
+//   //   message = "Not enough goods in stock!";
+//   // } else {
+//   //   message = "The order is accepted, our manager will contact you";
+//   // }
+//   message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
+//   console.log("message", message);
+//   // Change code above this line
+//   return message;
+// }
+// checkStorage(20, 21);
+
+//Task-26
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+//   message = password === ADMIN_PASSWORD ? "Access is allowed" : "Access denied, wrong password!";
+//   console.log("message", message);
+//   // Change code above this line
+//   return message;
+// }
+// checkPassword('jqueryismyjam2');
+
+//Task-27
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Change code below this line
+
+//  switch (type) { // Change this line
+//     case 'starter': // Change this line
+//       price = 0; // Change this line
+//       break;
+
+//     case 'professional': // Change this line
+//       price = 20; // Change this line
+//       break;
+
+//     case 'organization': // Change this line
+//       price = 50; // Change this line
+//       break;
+//   }
+//   console.log("price", price);
+//   // Change code above this line
+//   return price;
+// }
+// getSubscriptionPrice('organization');
+
+//Task-28
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+//   switch (password) {
+//     case null:
+//       message = "Canceled by user!";
+//       break;
+//     case ADMIN_PASSWORD:
+//       message = "Welcome!";
+//       break;
+//     default:
+//       message = "Access denied, wrong password!";
+//   }
+  
+//   // if (password === null) {
+//   //   message = "Canceled by user!";
+//   // } else if (password === ADMIN_PASSWORD) {
+//   //   message = "Welcome!";
+//   // } else {
+//   //   message = "Access denied, wrong password!";
+//   // }
+//   console.log("message", message);
+
+//   // Change code above this line
+//   return message;
+// }
+// checkPassword(null);
+
+//Task-29
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+//   switch (country) {
+//     case 'China':
+//       message = `Shipping to ${country} will cost 100 credits`;
+//       break;
+//     case 'Chile':
+//       message = `Shipping to ${country} will cost 250 credits`;
+//       break;
+//     case 'Australia':
+//       message = `Shipping to ${country} will cost 170 credits`;
+//       break;
+//     case 'Jamaica':
+//       message = `Shipping to ${country} will cost 120 credits`;
+//       break;
+//     default:
+//       message = "Sorry, there is no delivery to your country";
+//   }
+//   // Change code above this line
+//   console.log("message", message);
+//   return message;
+// }
+// getShippingCost('Jamaica');
+
+//Task-30
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+//   console.log("message", message);
+//   return message;
+// }
+// getNameLength('brother');
+
+//Task-31
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length-1];
+
+// // Change code above this line
+// console.log("courseTopicLength", courseTopicLength);
+// console.log("firstElement", firstElement);
+
+//Task-32
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+//   console.log("length", string.length);
+//   console.log("substring", substring);
+//   return substring;
+// }
+// getSubstring("Hello world", 3);
+
+//Task-33
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if (message.length <= maxLength) {
+//     result = message;
+//   } else {
+//     result = message.slice(0, maxLength) + '...';
+//   }
+//   /// Change code above this line
+//     console.log("result", result);
+//   return result;
+// }
+// formatMessage('Curabitur ligula sapien', 16);
+
+//Task-34
+
