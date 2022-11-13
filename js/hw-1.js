@@ -422,4 +422,34 @@
 // formatMessage('Curabitur ligula sapien', 16);
 
 //Task-34
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+//   console.log("normalizedInput", normalizedInput);
+
+//   return normalizedInput;
+// }
+// normalizeInput('HeLlO');
+
+//Task-35
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name); // Change this line
+//   console.log("result", result);
+//   return result;
+// }
+// checkForName('John Smith', 'JohN');
+
+//Task-36
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   if (message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale')) {
+//     result = true;
+//   } else {
+//     result = false;
+//   }
+//   console.log("result", result);
+//   // Change code above this line
+//   return result;
+// }
+// checkForSpam('Amazing SalE, only tonight!');
 
