@@ -175,16 +175,77 @@
 // }
 
 // Task-20
-function calculateTotalPrice(order) {
-  let total = 0;
-  // Change code below this line
-  for (let i = 0; i < order.length; i += 1) {
-    total += order[i];
-  } 
-  // Change code above this line
-  return total;
-}
-console.log(calculateTotalPrice([1, 2, 3, 4, 5]));
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   } 
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([1, 2, 3, 4, 5]));
 
 // Task-21
+// function findLongestWord(string) {
+//   // Change code below this line
+  
+//   const Array = string.split(" ");
+//   console.log("Array", Array);
+  
+//   let wordOfMaxLength = Array[0];
+//   for (let i = 0; i < Array.length; i += 1) {
+//     if (Array[i].length > wordOfMaxLength.length) {
+//       wordOfMaxLength = Array[i];
+//       console.log("wordOfMaxLength", wordOfMaxLength);
+//     }
+//   }
+//   return wordOfMaxLength;
+  
+//   // Change code above this line
+// }
+// console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
 
+//Task-22
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) { 
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(7, 15));
+
+// Task-23
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   const newNumbers = [];
+//   // Variant with index
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] > value) {
+//   //     newNumbers.push(numbers[i]);
+//   //   }
+//   // } 
+
+//   for (const Number of numbers) {
+//     if (Number > value) {
+//       newNumbers.push(Number);
+//     }
+//   }
+//   return newNumbers;
+
+//   // Change code above this line
+// }
+// console.log(filterArray([2, 5, 7, 1, 8], 2));
+
+//Task-24
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+// console.log(checkFruit('pear'));
+
+//Task-25
