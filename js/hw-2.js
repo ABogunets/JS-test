@@ -249,3 +249,54 @@
 // console.log(checkFruit('pear'));
 
 //Task-25
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const arrayOfCommonNumbers = [];
+//   for (let i = 0; i <= array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       arrayOfCommonNumbers.push(array1[i]);
+//     }
+//   }
+//   return arrayOfCommonNumbers;
+//  // Change code above this line
+// }
+// console.log(getCommonElements([2, 3, 4, 5, 7], [3, 5, 7, 8, 9]));
+
+//Task-26
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const orderPrice of order) {
+//     total += orderPrice;
+//   }
+//   // Change code above this line
+//   return total;
+// }
+//Task-27
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//     for (const number of numbers) {
+//       if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// } console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// Task-28
+// Change code below this line
+const a = 3 % 3 ;
+console.log("a", a);
+const b = 4 % 3;
+console.log("b", b);
+const c = 11 % 8 ;
+console.log("c", c);
+const d = 12 % 7;
+console.log("d", d);
+const e = 8 % 6;
+console.log("e", e);
