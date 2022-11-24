@@ -290,13 +290,65 @@
 
 // Task-28
 // Change code below this line
-const a = 3 % 3 ;
-console.log("a", a);
-const b = 4 % 3;
-console.log("b", b);
-const c = 11 % 8 ;
-console.log("c", c);
-const d = 12 % 7;
-console.log("d", d);
-const e = 8 % 6;
-console.log("e", e);
+// const a = 3 % 3 ;
+// console.log("a", a);
+// const b = 4 % 3;
+// console.log("b", b);
+// const c = 11 % 8 ;
+// console.log("c", c);
+// const d = 12 % 7;
+// console.log("d", d);
+// const e = 8 % 6;
+// console.log("e", e);
+
+//Task-29
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+//   const arrayOfEvens = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       arrayOfEvens.push(i);
+//     }
+//   }
+//   return arrayOfEvens;
+//     // Change code above this line
+//   }
+// console.table(getEvenNumbers(1, 10));
+
+//Task-30
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+//Task-31
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+//   // Change code above this line
+// }
+// console.log(findNumber(1, 10, 2));
+
+// Task-32
+function includes(array, value) {
+  // Change code below this line
+  for (const element of array) {
+    if (element === value) {
+      return true;
+    }
+  }
+  return false;
+  // Change code above this line
+}
+console.log(includes([1,2,3,4,5,6,7], 5));
