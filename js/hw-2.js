@@ -341,14 +341,14 @@
 // console.log(findNumber(1, 10, 2));
 
 // Task-32
-function includes(array, value) {
-  // Change code below this line
-  for (const element of array) {
-    if (element === value) {
-      return true;
-    }
-  }
-  return false;
-  // Change code above this line
-}
-console.log(includes([1,2,3,4,5,6,7], 5));
+// function includes(array, value) {
+//   // Change code below this line
+//   for (const element of array) {
+//     if (element === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   // Change code above this line
+// }
+// console.log(includes([1,2,3,4,5,6,7], 5));
