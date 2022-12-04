@@ -492,7 +492,7 @@
 // const worstScore = Math.min(...allScores);
 // console.log("worstScore", worstScore);
 
-// Task - 29
+// * Task - 29
 // const defaultSettings = {
 //   theme: "light",
 //   public: true,
@@ -509,7 +509,7 @@
 // const finalSettings = {...defaultSettings, ...overrideSettings};
 // console.log("finalSettings", finalSettings);
 
-// Task-30
+// * Task-30
 // function makeTask(data) {
 //   const completed = false;
 //   const category = "General";
@@ -521,4 +521,191 @@
 // }
 // console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
 
-// Task-31
+// * Task-31
+// Change code below this line
+// function add(...args) {
+//   let sumOfArgs = 0;
+//   for (const arg of args) {
+//     sumOfArgs += arg;
+//   }
+//   return sumOfArgs;
+//   // Change code above this line
+// }
+// console.log(add(1, 2, 3, 4, 5, 6, 7));
+
+// * Task-32
+// Change code below this line
+// function addOverNum(number, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (arg > number) {
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(addOverNum(1, 2, 3, 4, 5, 6, 7));
+
+// * Task-33
+// Change code below this line
+// function findMatches(arrayOfNumbers, ...args) {
+//   const matches = []; // Don't change this line
+//   for (const arg of args) {
+//     if (arrayOfNumbers.includes(arg)) {
+//       matches.push(arg);
+//     };
+//   };
+//   // Change code above this line
+//   return matches;
+// }
+//   console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+
+  // * Task-34
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//     updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+//   // Change code above this line
+// };
+
+// * Task-35
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const bookIndex = this.books.indexOf(oldName);
+//     console.log("bookIndex", bookIndex);
+//     this.books.splice(bookIndex, 1, newName);
+//     // Change code above this line
+//   },
+// };
+// bookShelf.updateBook("Haze", "Cool");
+// console.log(bookShelf);
+
+// * Task-36
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: [],
+//   // Change code above this line
+// };
+
+// * Task-37
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   // Change code above this line
+// };
+// console.log(atTheOldToad.potions);
+
+// * Task-38
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+
+//     // Change code above this line
+//   },
+// };
+// atTheOldToad.addPotion("Invisibility");
+// console.log(atTheOldToad.potions);
+// atTheOldToad.addPotion("Power potion");
+// console.log(atTheOldToad.potions);
+
+// * Task-39
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const potionIndex = this.potions.indexOf(potionName);
+//     this.potions.splice(potionIndex, 1);
+
+//     // Change code above this line
+//   },
+// };
+// atTheOldToad.removePotion("Dragon breath");
+// console.log(atTheOldToad.potions);
+// atTheOldToad.removePotion("Speed potion");
+// console.log(atTheOldToad.potions);
+
+// * Task-40
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//     const potionIndex = this.potions.indexOf(oldName);
+//     this.potions.splice(potionIndex, 1, newName);
+
+//     // Change code above this line
+//   },
+// };
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+// console.log(atTheOldToad.potions);
+// atTheOldToad.updatePotionName("Stone skin", "Invisibility");
+// console.log(atTheOldToad.potions);
+
+// * Task-41
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (const potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       };
+//     };
+//       this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === potionName) {
+//         this.potions.splice(i, 1);
+//       }
+//     }
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === oldName) {
+//         this.potions[i].name = newName;
+//       }
+//     }
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
+//     // Change code above this line
+// };
+
+// atTheOldToad.getPotions();
+
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 780 });
+// console.log(atTheOldToad.getPotions());
+
+// atTheOldToad.removePotion("Speed potion1");
+// console.log(atTheOldToad.getPotions());
+
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+// console.log(atTheOldToad.getPotions());
