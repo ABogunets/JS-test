@@ -40,20 +40,58 @@ today - 23 січня 21:38 2023
   2. з тих мілісекунд, що отримали у кроці 1 витягнемо кількість днів, годин, хвилин і секунд, які лишились до Нового року
   3. показати ці дані користувачу на сторінці
 */
+let isTimerRun = true;
 const newYearDate = new Date(`Jan 1, ${new Date().getFullYear() + 1}`);
 
-const timerId = setInterval(countDownTimeToNY, 1000);
+countDownTimeToNY();
+let timerId = setInterval(countDownTimeToNY, 1000);
 
-stopBtnEl.addEventListener('click', stopInterval);
-
-
-
+stopBtnEl.addEventListener('click', () => {
+  stopInterval();
+  if (!isTimerRun) {
+  continueBtnEl.disabled = false;
+  continueBtnEl.addEventListener('click', continueInterval);
+  };
+});
 
 function countDownTimeToNY() {
-  console.log('hi');
+  const now = Date.now();
+  // const now1 = new Date().getTime();
+  const diff = newYearDate - now;//скільки мілісекунд залишилось до нового року
+  
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes= Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  timeEl.textContent = `${days} d. ${hours} h. ${minutes} m. ${seconds} s.`;
+  
+  if (diff <= 0) {
+    stopInterval();
+    timeEl.textContent = 'Happy New Year!';
+  }
+
+}
+
+function continueInterval() {
+  isTimerRun = true;
+  continueBtnEl.disabled = true;
+  alert("Continue");
+  timerId = setInterval(countDownTimeToNY, 1000);
 }
 
 function stopInterval() {
+  isTimerRun = false;
   clearInterval(timerId);
   alert('The timer has been stopped!');
 }
+
+
+console.log(window.scrollY);
+
+   window.scrollBy({
+    top: 1000,
+    behavior: 'smooth',
+   });
+
+  console.log(window.scrollY);
